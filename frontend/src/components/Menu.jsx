@@ -4,7 +4,16 @@ import { role } from "@/lib/data";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Home, Gift, User, Settings, LogOut } from "lucide-react";
+import {
+  Home,
+  Gift,
+  User,
+  Settings,
+  LogOut,
+  Mail,
+  BookOpen,
+  Phone,
+} from "lucide-react";
 import LogoutModal from "./LogoutModal";
 import ProfileModal from "./ProfileModal"; // Import the ProfileModal component
 
@@ -26,6 +35,20 @@ const menuItems = [
         href: "coupons",
         color: "#6366F1",
         visible: ["admin", "teacher", "student", "parent"],
+      },
+      {
+        icon: <Mail size={20} />,
+        label: "Newsletter",
+        href: "newsletters",
+        color: "#4F46E5",
+        visible: ["admin", "teacher"],
+      },
+      {
+        icon: <Phone size={20} />,
+        label: "Contacts",
+        href: "contacts",
+        color: "#4338CA",
+        visible: ["admin", "teacher"],
       },
     ],
   },

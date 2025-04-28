@@ -11,7 +11,7 @@ const LogoutModal = ({ isOpen, onClose }) => {
   const handleLogout = async () => {
     try {
       // API call to logout - moved from Navbar
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/logout`, {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/auth/logout`, {
         method: "POST",
         credentials: "include",
         headers: {

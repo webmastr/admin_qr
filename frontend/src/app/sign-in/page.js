@@ -182,16 +182,6 @@ const LoginPage = () => {
             >
               Forgot Password?
             </a>
-
-            <p className="text-sm text-gray-600">
-              Don't have an account?{" "}
-              <a
-                href="/sign-up"
-                className="text-indigo-600 hover:underline font-semibold"
-              >
-                Sign Up
-              </a>
-            </p>
           </motion.div>
         </motion.div>
       </motion.div>

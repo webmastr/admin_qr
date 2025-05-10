@@ -11,8 +11,11 @@ import {
   Settings,
   LogOut,
   Mail,
+  Star,
   BookOpen,
   Phone,
+  UserCircle,
+  User2,
 } from "lucide-react";
 import LogoutModal from "./LogoutModal";
 import ProfileModal from "./ProfileModal"; // Import the ProfileModal component
@@ -49,6 +52,20 @@ const menuItems = [
         href: "contacts",
         color: "#4338CA",
         visible: ["admin", "teacher"],
+      },
+      {
+        icon: <Star size={20} />,
+        label: "Favorites",
+        href: "faq",
+        color: "#F59E0B",
+        visible: ["admin", "teacher", "student", "parent"],
+      },
+      {
+        icon: <User2 size={20} />,
+        label: "Users",
+        href: "users",
+        color: "#10B981",
+        visible: ["admin", "teacher"], // Include all roles that should see this
       },
     ],
   },
